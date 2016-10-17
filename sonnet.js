@@ -14,5 +14,5 @@ var n = son.length;
 document.write("<p>The number of characters in this sonnet is: </p>" + n);
 var replace = son.replace("winter", "yuletide");
 document.getElementById("sonnet").innerHTML = replace;
-var replaceG = son.replace(/the/g, "a large");
+var replaceG = son.replace(/ the | The |The /g, " a large ");
 document.getElementById("sonnet").innerHTML = replaceG;
